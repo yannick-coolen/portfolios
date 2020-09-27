@@ -7,8 +7,10 @@
 <body>
 <section>
     <header>
-        <p class="date"><?php $mydate=getdate(date("U")); echo "$mydate[weekday], $mydate[mday] $mydate[month],  $mydate[year]"; ?></p>
-        <h1>Welkom</h1>
+        <div class="banner">
+            <p class="date"><?php $mydate=getdate(date("U")); echo "$mydate[weekday], $mydate[mday] $mydate[month],  $mydate[year]"; ?></p>
+            <h1>Welkom</h1>
+        </div>
     </header>
 </section>
 

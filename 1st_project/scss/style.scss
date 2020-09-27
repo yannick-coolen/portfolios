@@ -7,12 +7,32 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
 
-    p{
-        text-align: center;
-        margin-top: 3rem;
-        font-size: 3rem; 
+section {
+    // margin-top: -3em;
+
+    header{
+
+        p{
+            text-align: center;
+            margin-top: 4rem;
+            font-size: 3rem; 
+        }
+
+        p, h1 {
+            color: $primary-color;
+        }
+
+        .banner {
+            background-image: url(../img/building.jpg);
+            height: 20rem;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-bottom: 4em;
+            border: solid 1px $homestyle-color;
+
+        }
     }
 }
 
@@ -29,11 +49,12 @@ body {
 
 .nav-menu {
     background: $homestyle-color;
-    padding: 1.5rem;
+    height: 3rem;
 
     a{
-        margin: 2em;
+        display: inline-block;
         color: $primary-color;
+        padding: .7rem;
     }
 
     a:hover {
@@ -41,14 +62,15 @@ body {
         color: $hover-color;  
     }
 }
+ 
 
 .main-container {
     max-width: 80%;
-    border: solid 1px;
-    margin: 0 auto 3rem;
+    margin: -4em auto 0;
     height: 50rem;
     padding: 3rem;
-    background-color: rgba(100, 118, 134, 0.384);
+    background-color: rgba(255, 255, 255, 0.726);
+    color: $text-color;
 }
 
 footer {
