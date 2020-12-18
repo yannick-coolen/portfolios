@@ -10,33 +10,36 @@
 
 section {
     // margin-top: -3em;
-
     header{
+        .nav-menu {
+            height: 3rem;
 
-        p{
-            text-align: center;
-            margin-top: 4rem;
-            font-size: 3rem; 
-        }
+            .banner {
+                background-image: url(../img/building.jpg);
+                height: 17rem;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-bottom: 4em;
 
-        p, h1 {
-            color: $primary-color;
-        }
-
-        .banner {
-            background-image: url(../img/building.jpg);
-            height: 20rem;
-            width: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin-bottom: 4em;
-            border: solid 1px $homestyle-color;
-
+                a{
+                    display: inline-block;
+                    color: $primary-color;
+                    padding: .7rem;
+                    margin-top: 14rem;
+                }
+            
+                a:hover {
+                    text-decoration: none;
+                    color: $hover-color; 
+                }
+            }   
         }
     }
 }
 
 body {
+    
     background: url(../img/blue_smoke.jpg) fixed;
     background-repeat: no-repeat;
     background-size: 400px 1200px;
@@ -47,35 +50,26 @@ body {
     }
 }
 
-.nav-menu {
-    background: $homestyle-color;
-    height: 3rem;
-
-    a{
-        display: inline-block;
-        color: $primary-color;
-        padding: .7rem;
-    }
-
-    a:hover {
-        text-decoration: none;
-        color: $hover-color;  
-    }
-}
- 
-
 .main-container {
+
     max-width: 80%;
-    margin: -4em auto 0;
+    margin: 14em auto 5rem;
     height: 50rem;
     padding: 3rem;
     background-color: rgba(255, 255, 255, 0.726);
     color: $text-color;
+
+    p{
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+
 }
 
 footer {
     background: $homestyle-color;
-    height: 10rem;
+    height: 11rem;
     width: 100%;
     color: $primary-color;
     padding: 1.5rem;
