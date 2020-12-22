@@ -5,16 +5,21 @@ require_once('nav.php');
 </head>
 <body>
     <main>
-        <section>
-            <div class="main-container ">
-                <p class="date">
-                    <?php $mydate = getdate(date("U"));
-                    echo "$mydate[weekday], $mydate[mday] $mydate[month],  $mydate[year]";
-                    ?>
-                </p>
-                <h2>Contact</h2>
-            </div>
+        <article>
+        <section id="main-section">
+            <section>
+                <div class="main-container">
+                    
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    
+                </div>
+            </section>
         </section>
+        </article>
     </main>
     <?php
     require_once('footer.php');
