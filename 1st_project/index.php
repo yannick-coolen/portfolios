@@ -18,12 +18,6 @@ require_once('nav.php');
                         <div class="profile-pic"><img src="img/foto.png" alt=""></div>
                     </div>
             </section>
-
-            <section>
-                <div>
-
-                </div>
-            </section>
         </section>
     </article>
 </main>
