@@ -1,0 +1,6 @@
+// grid
+@each $item in $items {
+    .#{$item} {
+        grid-area: $item;
+    }
+}

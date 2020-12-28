@@ -1,3 +1,14 @@
+.main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: main;
+}
+
+.picture-pic {
+  grid-area: picture-pic;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -28,7 +39,7 @@ section header .nav-menu .banner a {
 
 section header .nav-menu .banner a:hover {
   text-decoration: none;
-  color: #8d8d9b;
+  color: #9595dd;
 }
 
 body {
@@ -64,17 +75,26 @@ body h1 {
 }
 
 .grid-container {
+  margin-top: 2em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+      grid-template-areas: 'main main main main main profile-pic';
   grid-gap: 10px;
-  padding-left: 10px;
 }
 
-.grid-container div {
+.grid-container div:first-child {
   text-align: center;
-  font-size: 30px;
+}
+
+.grid-container div:last-child {
+  width: 50%;
+}
+
+.grid-container div:last-child img {
+  float: right;
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
 }
 
 footer {
@@ -118,8 +138,8 @@ footer p {
   /* Increase font size */
 }
 
-#myBtn #myBtn:hover {
-  background-color: #555;
+#myBtn:hover {
+  background-color: #9595dd;
   /* Add a dark-grey background on hover */
 }
 

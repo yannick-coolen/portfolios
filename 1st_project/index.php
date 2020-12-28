@@ -13,20 +13,25 @@ require_once('nav.php');
                         echo "$mydate[weekday], $mydate[mday] $mydate[month],  $mydate[year]";
                         ?>
                     </p>
-                    
-                    <section>
+
+                    <!-- <section>
                         <div class="grid-container">
                             <div><h2>Hello</h2></div>
-                            <div><img src="img/foto.png" alt=""></div>
+                            <div></div>
 
                         </div>
-                    </section>
-                </div>
+                    </section> -->
+
+                    <div class="grid-container">
+                        <div class="main"><h2>Hello</h2></div>
+                        <div class="profile-pic"><img src="img/foto.png" alt=""></div>
+
+                    </div>
             </section>
 
             <section>
                 <div>
-                    
+
                 </div>
             </section>
         </section>
