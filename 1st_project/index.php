@@ -1,7 +1,7 @@
 <title>Homepage</title>
 </head>
 <?php
-require_once('nav.php');
+require_once('include/nav.php');
 ?>
 <main>
     <article>
@@ -23,5 +23,5 @@ require_once('nav.php');
 </main>
 
 <?php
-require_once('footer.php');
+require_once('include/footer.php');
 ?>

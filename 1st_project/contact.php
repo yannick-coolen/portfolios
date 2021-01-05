@@ -1,5 +1,5 @@
 <?php
-require_once('nav.php');
+require_once('include/nav.php');
 ?>
 <title>Contact</title>
 </head>
@@ -22,5 +22,5 @@ require_once('nav.php');
         </article>
     </main>
     <?php
-    require_once('footer.php');
+    require_once('include/footer.php');
     ?>
