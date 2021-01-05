@@ -51,11 +51,11 @@ body {
 
 #main-section {
     width: 80%;
-    height: 1000px;
+    height: auto;
     margin: 0 auto;
     background-color: $bg-color;
 
-    .main-container {
+    .main-container-date {
         max-width: 100%;
         margin: 14em auto 5rem;
         height: auto;
@@ -70,11 +70,11 @@ body {
     }
 }
 
-.grid-container {
+.grid-container-top {
     margin-top: 2em;
     display: grid;
     grid-template-areas:
-        'main main main main main profile-pic';
+        'main-text main-text main-text main-text main-text profile-pic';
     grid-gap: 10px;
    
     div {
@@ -90,6 +90,27 @@ body {
                 height: auto;
                 border-radius: 50%;
             }
+        }
+    }
+}
+
+.grid-container-middle {
+    margin: 2em auto 0;
+    display: grid;
+    grid-template-areas:
+        'main-left main-left main-right';
+    grid-gap: 2.5rem;
+    width: 80%;
+    
+    div {
+        margin-bottom: 1rem;
+        &.main-left {
+            padding: 2rem;
+        }
+
+        &.main-right {
+            // code here
+            border: none;
         }
     }
 }

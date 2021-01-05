@@ -1,12 +1,25 @@
-.main {
+.main-text {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
-  grid-area: main;
+  grid-area: main-text;
 }
 
 .picture-pic {
   grid-area: picture-pic;
+}
+
+.main-left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main-left;
+}
+
+.main-right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: main-right;
 }
 
 * {
@@ -55,12 +68,12 @@ body h1 {
 
 #main-section {
   width: 80%;
-  height: 1000px;
+  height: auto;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.726);
 }
 
-#main-section .main-container {
+#main-section .main-container-date {
   max-width: 100%;
   margin: 14em auto 5rem;
   height: auto;
@@ -68,33 +81,54 @@ body h1 {
   color: black;
 }
 
-#main-section .main-container p {
+#main-section .main-container-date p {
   font-size: 3rem;
   text-align: center;
   margin-top: 4rem;
 }
 
-.grid-container {
+.grid-container-top {
   margin-top: 2em;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'main main main main main profile-pic';
+      grid-template-areas: 'main-text main-text main-text main-text main-text profile-pic';
   grid-gap: 10px;
 }
 
-.grid-container div:first-child {
+.grid-container-top div:first-child {
   text-align: center;
 }
 
-.grid-container div:last-child {
+.grid-container-top div:last-child {
   width: 50%;
 }
 
-.grid-container div:last-child img {
+.grid-container-top div:last-child img {
   float: right;
   width: 50%;
   height: auto;
   border-radius: 50%;
+}
+
+.grid-container-middle {
+  margin: 2em auto 0;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'main-left main-left main-right';
+  grid-gap: 2.5rem;
+  width: 80%;
+}
+
+.grid-container-middle div {
+  margin-bottom: 1rem;
+}
+
+.grid-container-middle div.main-left {
+  padding: 2rem;
+}
+
+.grid-container-middle div.main-right {
+  border: none;
 }
 
 footer {
