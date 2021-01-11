@@ -1,0 +1,190 @@
+.main-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: main-text;
+}
+
+.picture-pic {
+  grid-area: picture-pic;
+}
+
+.main-left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main-left;
+}
+
+.main-right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: main-right;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section header .nav-menu {
+  height: 3rem;
+}
+
+section header .nav-menu .banner {
+  background-image: url(../img/building.jpg);
+  height: 17rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 4em;
+}
+
+section header .nav-menu .banner a {
+  display: inline-block;
+  color: white;
+  padding: .7rem;
+  margin-top: 14rem;
+}
+
+section header .nav-menu .banner a:hover {
+  text-decoration: none;
+  color: #9595dd;
+}
+
+body {
+  background: url(../img/blue_smoke.jpg) fixed;
+  background-repeat: no-repeat;
+  background-size: 400px 1200px;
+}
+
+body h1 {
+  text-align: center;
+  margin-top: 3em;
+}
+
+#main-section {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.726);
+}
+
+#main-section .main-container-date {
+  max-width: 100%;
+  margin: 14em auto 5rem;
+  height: auto;
+  padding: 3rem;
+  color: black;
+}
+
+#main-section .main-container-date p {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.grid-container-top {
+  margin-top: 2em;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'main-text main-text main-text main-text main-text profile-pic';
+  grid-gap: 10px;
+}
+
+.grid-container-top div:first-child {
+  text-align: center;
+}
+
+.grid-container-top div:last-child {
+  width: 50%;
+}
+
+.grid-container-top div:last-child img {
+  float: right;
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.grid-container-middle {
+  margin: 2em auto 0;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'main-left main-left main-right';
+  grid-gap: 2.5rem;
+  width: 80%;
+}
+
+.grid-container-middle div {
+  margin-bottom: 1rem;
+}
+
+.grid-container-middle div.main-left {
+  padding: 2rem;
+}
+
+.grid-container-middle div.main-right {
+  border: none;
+}
+
+footer {
+  background: #343a40;
+  height: 11rem;
+  width: 100%;
+  color: white;
+  padding: 1.5rem;
+}
+
+footer p {
+  color: white;
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #4b545c;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #9595dd;
+  /* Add a light-blue background on hover */
+}
+
+@media (max-width: 700px) {
+  body {
+    background: none;
+  }
+  .main-container {
+    max-width: 100%;
+    background-color: white;
+    border: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

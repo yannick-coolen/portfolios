@@ -25,24 +25,15 @@ require_once('includes/nav.php');
             <!-- main-middle -->
             <section>
                 <div class="grid-container-middle">
-                <form action="" method="post">
-                    <div class="main-left">
-                    <label for="">Fullname</label><br>
-                    <input type="text" name="" placeholder="Please, fill in your full name">
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                    </div>
-
+                    <form action="" method="post">
+                        <div class="main-left">
+                        <label for="">Fullname</label><br>
+                        <input type="text" name="" placeholder="Please, fill in your full name">
+                        <br><br>
+                        <label for="">Password</label><br>
+                        <input type="password" name="" placeholder="Enter your password here">
+                        <br>
+                        <input type="button" value="Submit">
                     </form>
                 </div>
             </section>

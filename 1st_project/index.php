@@ -1,7 +1,7 @@
 <title>Homepage</title>
 </head>
 <?php
-require_once('include/nav.php');
+require_once('includes/nav.php');
 ?>
 <main>
     <article>
@@ -55,5 +55,5 @@ require_once('include/nav.php');
 </main>
 
 <?php
-require_once('include/footer.php');
+require_once('includes/footer.php');
 ?>
