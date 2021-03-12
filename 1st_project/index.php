@@ -23,8 +23,17 @@ require_once('includes/nav.php');
                     <div class="main-text">
                         <h2>Hello</h2>
                     </div>
-                    <div class="profile-pic">
-                        <img src="img/foto.png" alt="">
+                    <div>
+                        <div class="profile-pic">
+                            <img src="img/foto.png" alt="">
+                        </div>
+                        <div>
+                            <h3>Yannick Coolen</h3>
+                            <p>Web-Developer</p>
+                            <!-- Start gradient line -->
+                            <div class="gradient-line"></div>
+                            <!-- End gradient line -->
+                        </div>
                     </div>
                 </div>
             </section>

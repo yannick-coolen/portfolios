@@ -9,11 +9,9 @@
 }
 
 section {
-    // margin-top: -3em;
     header{
         .nav-menu {
             height: 3rem;
-
             .banner {
                 background-image: url(../img/building.jpg);
                 height: 17rem;
@@ -21,14 +19,12 @@ section {
                 background-size: cover;
                 background-repeat: no-repeat;
                 margin-bottom: 4em;
-
                 a{
                     display: inline-block;
                     color: $primary-color;
                     padding: .7rem;
                     margin-top: 14rem;
                 }
-            
                 a:hover {
                     text-decoration: none;
                     color: $hover-color; 
@@ -42,7 +38,6 @@ body {
     background: url(../img/blue_smoke.jpg) fixed;
     background-repeat: no-repeat;
     background-size: 400px 1200px;
-
     h1 {
         text-align: center;
         margin-top: 3em;
@@ -54,14 +49,12 @@ body {
     height: auto;
     margin: 0 auto;
     background-color: $bg-color;
-
     .main-container-date {
         max-width: 100%;
         margin: 14em auto 5rem;
         height: auto;
         padding: 3rem;
         color: $text-color;
-
         p{
             font-size: 3rem;
             text-align: center;
@@ -74,24 +67,38 @@ body {
     margin-top: 2em;
     display: grid;
     grid-template-areas:
-        'main-text main-text main-text main-text main-text profile-pic';
+        'main-text main-text main-text main-text profile-pic';
     grid-gap: 10px;
-   
     div {
         &:first-child {
             text-align: center;
         }
-
         &:last-child {
             width: 50%;
             img {
-                float: right;
-                width: 50%;
-                height: auto;
+                width: 100%;
                 border-radius: 50%;
+                box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.425);                 
+            }
+            div:last-child{
+                text-align: center;
+                margin-top: 2em;
+                border-left: none;
+                // border-bottom: solid 1px;
+                // background: linear-gradient(to right, black, white, black);
+                width: 100%;
+                p {
+                    font-weight: 400;
+                }     
             }
         }
     }
+}
+
+.gradient-line {
+    background: linear-gradient(to right, black, white, black);
+    padding: 1px;
+    width: 100%;
 }
 
 .grid-container-middle {
@@ -101,13 +108,11 @@ body {
         'main-left main-left main-right';
     grid-gap: 2.5rem;
     width: 80%;
-    
     div {
         margin-bottom: 1rem;
         &.main-left {
             padding: 2rem;
         }
-
         &.main-right {
             // code here
             border: none;
@@ -121,7 +126,6 @@ footer {
     width: 100%;
     color: $primary-color;
     padding: 1.5rem;
-
     p {
         color: white;
     }
@@ -141,10 +145,9 @@ footer {
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
-
-  &:hover {
-    background-color: $hover-color; /* Add a light-blue background on hover */
-  }
+    &:hover {
+        background-color: $hover-color; /* Add a light-blue background on hover */
+    }
 }
 
 @media (max-width: 700px) {
