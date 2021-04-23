@@ -12,13 +12,12 @@
 .main-left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: main-left;
 }
 
 .main-right {
   -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   grid-area: main-right;
 }
 
@@ -67,9 +66,10 @@ body h1 {
 }
 
 #main-section {
-  width: 80%;
+  width: 75%;
   height: auto;
-  margin: 0 auto;
+  margin: 0 0 0 25%;
+  padding-bottom: 1rem;
   background-color: rgba(255, 255, 255, 0.726);
 }
 
@@ -106,8 +106,8 @@ body h1 {
 .grid-container-top div:last-child img {
   width: 100%;
   border-radius: 50%;
-  -webkit-box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.425);
-          box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.425);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
 }
 
 .grid-container-top div:last-child div:last-child {
@@ -132,9 +132,11 @@ body h1 {
   margin: 2em auto 0;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'main-left main-left main-right';
-  grid-gap: 2.5rem;
-  width: 80%;
+      grid-template-areas: 'main-left main-right';
+  width: 100%;
+  min-height: 200px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
 }
 
 .grid-container-middle div {
@@ -142,11 +144,58 @@ body h1 {
 }
 
 .grid-container-middle div.main-left {
-  padding: 2rem;
+  padding: 1rem 0 0;
+  max-width: 30%;
 }
 
 .grid-container-middle div.main-right {
+  padding: 1rem;
+  margin-left: -20vw;
+}
+
+.grid-container-middle div.main-right .contact-form {
+  margin: 0 16vw;
+  padding-left: 6rem;
+}
+
+.grid-container-middle div.main-right .contact-form input[type="text"] {
+  width: 80%;
+}
+
+.confirm-btn {
+  background-color: #4b545c;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
   border: none;
+  border-radius: 10px;
+  min-width: 25%;
+  font-size: 1vw;
+}
+
+.confirm-btn:hover {
+  background-color: #9595dd;
+  /* Add a light-blue background on hover */
+}
+
+.btn {
+  background-color: #4b545c;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  border: none;
+  border-radius: 10px;
+  min-width: 100%;
+  font-size: 1vw;
+}
+
+.btn:hover {
+  background-color: #9595dd;
+  /* Add a light-blue background on hover */
 }
 
 footer {
@@ -162,6 +211,14 @@ footer p {
 }
 
 #myBtn {
+  background-color: #4b545c;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  border: none;
+  border-radius: 10px;
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -176,16 +233,8 @@ footer p {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #4b545c;
-  /* Set a background color */
-  color: white;
-  /* Text color */
-  cursor: pointer;
-  /* Add a mouse pointer on hover */
   padding: 15px;
   /* Some padding */
-  border-radius: 10px;
-  /* Rounded corners */
   font-size: 18px;
   /* Increase font size */
 }
@@ -198,6 +247,10 @@ footer p {
 @media (max-width: 700px) {
   body {
     background: none;
+  }
+  #main-section {
+    max-width: 100%;
+    margin: 0 auto;
   }
   .main-container {
     max-width: 100%;

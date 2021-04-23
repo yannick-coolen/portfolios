@@ -1,7 +1,12 @@
+<?php
+    $button = array("button_1", "button_2", "button_3", "button_4"
+);
+?>
+
 <title>Homepage</title>
 </head>
 <?php
-require_once('includes/nav.php');
+include 'includes/nav.php';
 ?>
 <main>
     <article>
@@ -31,34 +36,34 @@ require_once('includes/nav.php');
                             <h3>Yannick Coolen</h3>
                             <p>Web-Developer</p>
                             <!-- Start gradient line -->
-                            <div class="gradient-line"></div>
                             <!-- End gradient line -->
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="gradient-line"></div>
             <!-- main-middle -->
+
+
             <section>
                 <div class="grid-container-middle">
                     <div class="main-left">
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
-                        <p>test</p>
+                    <?php
+                        foreach($button as $btn) {
+                        echo <<<_END
+                                <div>
+                                    <a><button class="btn">$btn</button></a>
+                                </div>
+                            _END;
+                        }
+                    ?>
                     </div>
                     <div class="main-right">
                         <p>text</p> 
                     </div>
                 </div>
             </section>
+                       
         </section>
     </article>
 </main>

@@ -1,6 +1,7 @@
 <?php
-require_once('includes/nav.php');
 require_once('includes/config/config.php');
+include 'includes/nav.php';
+
 ?>
 <title>Contact</title>
 </head>
@@ -22,21 +23,27 @@ require_once('includes/config/config.php');
                 <!-- Toptext -->
                 <section>
 
-                    </div>
                 </section>
                 <!-- main-middle -->
                 <section>
-                    <form action="" method="post">   
-                        <label for="">Fullname</label><br>
-                        <input type="text" placeholder="Please, in your full name">
-                        <br><br>
-                        <label for="">Fullname</label><br>
-                        <input type="text" placeholder="Please, in your full name">
-                        <br><br>
-                        <label for="">Fullname</label><br>
-                        <input type="text" placeholder="Please, in your full name">
-    
-                    </form>
+                    <div class="grid-container-middle">
+                        <div class="main-right">
+                            <div class="contact-form">
+                                <form action="" method="post">   
+                                    <label for="">Fullname</label><br>
+                                    <input type="text" placeholder="Please, in your full name">
+                                    <br><br>
+                                    <label for="">Fullname</label><br>
+                                    <input type="text" placeholder="Please, in your full name">
+                                    <br><br>
+                                    <label for="">Fullname</label><br>
+                                    <input type="text" placeholder="Please, in your full name">
+                                    <br><br>
+                                    <input type="button" value="Confirm" class="confirm-btn">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </section>
         </article>

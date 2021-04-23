@@ -1,0 +1,16 @@
+@mixin gradient-black-white {
+    background: linear-gradient(to right, black, white, black);
+    padding: 1px;
+    width: 100%;
+}
+
+@mixin btn {
+    background-color: lighten(#343a40, 10%); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border: none;
+    border-radius: 10px;
+    &:hover {
+        background-color: $hover-color; /* Add a light-blue background on hover */
+    }
+}
