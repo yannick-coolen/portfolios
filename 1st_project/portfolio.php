@@ -11,7 +11,7 @@ include 'includes/nav.php';
             <section>
                 <div class="main-container-date">
                     <p class="date">
-                        <?php
+                        <?php 
                         include 'includes/config/clock.php';
                         ?>
                     </p>
@@ -20,18 +20,12 @@ include 'includes/nav.php';
             <!-- Toptext -->
             <section>
                 <div class="grid-container-top">
-                    <div class="main-text">
-                        <h2>Hello</h2>
+                    <div>
+                        <h2>Portfolio</h2>
                     </div>
                     <div>
                         <div class="profile-pic">
-                            <img src="img/foto.png" alt="">
-                        </div>
-                        <div>
-                            <h3>Yannick Coolen</h3>
-                            <p>Web-Developer</p>
-                            <!-- Start gradient line -->
-                            <!-- End gradient line -->
+
                         </div>
                     </div>
                 </div>
